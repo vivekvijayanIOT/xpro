@@ -766,11 +766,11 @@ x10 = []
 for w in range(1,21):
 	x10.append(w)
 
-plt.plot(x10, y10, color='green', linestyle='dashed', linewidth = 3,marker='o', markerfacecolor='red', markersize=12)
-plt.ylim(1,max(y10)+5)
-plt.xlim(1,20)
-plt.xlabel('Nodes in Network')
-plt.ylabel('Time')
+plt.plot(y10, x10, color='green', linestyle='dashed', linewidth = 3,marker='o', markerfacecolor='red', markersize=12)
+plt.xlim(1,max(y10)+5)
+plt.ylim(1,20)
+plt.ylabel('Nodes in Network')
+plt.xlabel('Time')
 plt.title('Visit order of static node')
 
 plt.show()
