@@ -1247,11 +1247,11 @@ whennetworkstop()
 x10 = []
 for w in range(1,41):
 	x10.append(w)
-plt.plot(y10, x10, color='green', linestyle='dashed', linewidth = 3,marker='o', markerfacecolor='red', markersize=12)
-plt.xlim(1,max(y10)+5)
-plt.ylim(1,40)
-plt.ylabel('Nodes in Network')
-plt.xlabel('Time')
+plt.plot(x10, y10, color='green', linestyle='dashed', linewidth = 3,marker='o', markerfacecolor='red', markersize=12)
+plt.ylim(1,max(y10)+5)
+plt.xlim(1,40)
+plt.xlabel('Nodes in Network')
+plt.ylabel('Time')
 plt.title('Visit order of static node')
 plt.show()
 for plotx,ploty,node in zip(nodexpos,nodeypos,range(1,41)):
