@@ -36,7 +36,7 @@ class node:
 		self.check=0
 		self.times=0
 	def discharge(self):
-		if(self.charge>0):
+		if(self.charge>2):
 			self.charge-=0.7   # to change the battery level
 	def charger(self,n):
 		global times
