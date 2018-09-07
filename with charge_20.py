@@ -673,45 +673,45 @@ def backward(y,r):
 def whennetworkstop():
 	print('''*** Node dying time ***''')
 	if N1.check!=0:
-		print( ' Node 1 dies at %s sec'%((N1.charge*2)+times))
+		print( ' Node 1 dies at %s sec'%round((N1.charge*2)+times))
 	if N2.check!=0:
-		print(' Node 2 dies at %s sec'%((N2.charge*2)+times))
+		print(' Node 2 dies at %s sec'%round((N2.charge*2)+times))
 	if N3.check!=0:
-		print(' Node 3 dies at %s sec'%((N3.charge*2)+times))
+		print(' Node 3 dies at %s sec'%round((N3.charge*2)+times))
 	if N4.check!=0:
-		print( ' Node 4 dies at %s sec'%((N4.charge*2)+times))
+		print( ' Node 4 dies at %s sec'%round((N4.charge*2)+times))
 	if N5.check!=0:
-		print( ' Node 5 dies at %s sec'%((N5.charge*2)+times))
+		print( ' Node 5 dies at %s sec'%round((N5.charge*2)+times))
 	if N6.check!=0:
-		print( ' Node 6 dies at %s sec'%((N6.charge*2)+times))
+		print( ' Node 6 dies at %s sec'%round((N6.charge*2)+times))
 	if N7.check!=0:
-		print( ' Node 7 dies at %s sec'%((N7.charge*2)+times))
+		print( ' Node 7 dies at %s sec'%round((N7.charge*2)+times))
 	if N8.check!=0:
-		print( ' Node 8 dies at %s sec'%((N8.charge*2)+times))
+		print( ' Node 8 dies at %s sec'%round((N8.charge*2)+times))
 	if N9.check!=0:
-		print( ' Node 9 dies at %s sec'%((N9.charge*2)+times))
+		print( ' Node 9 dies at %s sec'%round((N9.charge*2)+times))
 	if N10.check!=0:
-		print( ' Node 10 dies at %s sec'%((N10.charge*2)+times))
+		print( ' Node 10 dies at %s sec'%round((N10.charge*2)+times))
 	if N11.check!=0:
-		print( ' Node 11 dies at %s sec'%((N11.charge*2)+times))
+		print( ' Node 11 dies at %s sec'%round((N11.charge*2)+times))
 	if N12.check!=0:
-		print( ' Node 12 dies at %s sec'%((N12.charge*2)+times))
+		print( ' Node 12 dies at %s sec'%round((N12.charge*2)+times))
 	if N13.check!=0:
-		print( ' Node 13 dies at %s sec'%((N13.charge*2)+times))
+		print( ' Node 13 dies at %s sec'%round((N13.charge*2)+times))
 	if N14.check!=0:
-		print( ' Node 14 dies at %s sec'%((N14.charge*2)+times))
+		print( ' Node 14 dies at %s sec'%round((N14.charge*2)+times))
 	if N15.check!=0:
-		print( ' Node 15 dies at %s sec'%((N15.charge*2)+times))
+		print( ' Node 15 dies at %s sec'%round((N15.charge*2)+times))
 	if N16.check!=0:
-		print( ' Node 16 dies at %s sec'%((N16.charge*2)+times))
+		print( ' Node 16 dies at %s sec'%round((N16.charge*2)+times))
 	if N17.check!=0:
-		print( ' Node 17 dies at %s sec'%((N17.charge*2)+times))
+		print( ' Node 17 dies at %s sec'%round((N17.charge*2)+times))
 	if N18.check!=0:
-		print( ' Node 18 dies at %s sec'%((N18.charge*2)+times))
+		print( ' Node 18 dies at %s sec'%round((N18.charge*2)+times))
 	if N19.check!=0:
-		print( ' Node 19 dies at %s sec'%((N19.charge*2)+times))
+		print( ' Node 19 dies at %s sec'%round((N19.charge*2)+times))
 	if N20.check!=0:
-		print( ' Node 20 dies at %s sec'%((N20.charge*2)+times))
+		print( ' Node 20 dies at %s sec'%round((N20.charge*2)+times))
 
 # Execution starts 
 print("**** Mobile node starts ****")
@@ -766,11 +766,11 @@ x10 = []
 for w in range(1,21):
 	x10.append(w)
 
-plt.plot(y10, x10, color='green', linestyle='dashed', linewidth = 3,marker='o', markerfacecolor='red', markersize=12)
-plt.xlim(1,max(y10)+5)
-plt.ylim(1,20)
-plt.ylabel('Nodes in Network')
-plt.xlabel('Time')
+plt.plot(x10, y10, color='green', linestyle='dashed', linewidth = 3,marker='o', markerfacecolor='red', markersize=12)
+plt.ylim(1,max(y10)+5)
+plt.xlim(1,20)
+plt.xlabel('Nodes in Network')
+plt.ylabel('Time')
 plt.title('Visit order of static node')
 
 plt.show()
